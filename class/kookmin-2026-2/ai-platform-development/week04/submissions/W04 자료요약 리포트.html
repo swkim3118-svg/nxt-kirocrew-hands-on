@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>빛담 가을사진전(E04) 자료 요약</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, "Segoe UI", "Malgun Gothic", sans-serif;
+         max-width: 900px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+  h1 { border-bottom: 2px solid #4a6; padding-bottom: .3rem; }
+  h2 { margin-top: 2rem; color: #4a6; }
+  .meta { color: #888; margin: .2rem 0; font-size: .9rem; }
+  table { border-collapse: collapse; width: 100%; margin-top: .5rem; }
+  th, td { border: 1px solid #ccc; padding: .45rem .6rem; text-align: left; vertical-align: top; }
+  th { background: rgba(74,170,102,.15); }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  td.path, .path { font-family: ui-monospace, Consolas, monospace; font-size: .85rem; }
+  .dim { color: #999; }
+  ul.review li { color: #c33; }
+  footer { margin-top: 2.5rem; color: #aaa; font-size: .8rem; }
+</style>
+</head><body>
+  <h1>빛담 가을사진전(E04) 자료 요약</h1>
+  <p class="meta">생성일 2026-09-23</p>
+  <section>
+    <h2>개요</h2>
+    <p class="meta">대상: <code>(파일 직접 지정)</code></p>
+    <p class="meta">파일 수: md 8개 · csv 3개 · 건너뜀 0개</p>
+    <p>빛담 가을사진전(E04) 운영 문서 8개(md)와 데이터 3개(csv)를 취합했다. 문서는 지원금·공간·회계 기준과 E04 승인서·회의 메모로, 현재 승인된 참가 정원은 160명(장소 승인서 기준, 홍보 180명은 변경 승인서가 없어 무효)이다. CSV는 참가신청 200건·회계 120건·구매계획 12건이며, 회계의 금액 합계는 수입과 지출이 섞인 단순 합이라 재원별·수입/지출 구분 집계가 별도로 필요하다.</p>
+  </section>
+  <section>
+    <h2>문서 요약</h2>
+    <table>
+      <thead><tr><th>파일</th><th>요약</th></tr></thead>
+      <tbody>
+      <tr>
+        <td class="path">documents\W04_01_학교지원금지침.md</td>
+        <td>RULE-01 학교 지원금 지침. 지원 대상(인화 재료·설치·홍보·식음료 1인 4,000원 이내)과 제외(기념품·개인선물·주류), 증빙 요건, 미입금액은 현금에 더하지 않는 자금 구분 규칙.</td>
+      </tr>
+      <tr>
+        <td class="path">documents\W04_02_학교공간이용안내.md</td>
+        <td>RULE-02 공간 이용 안내. 참가 정원은 장소 사용 승인서를 따르며(운영요원 제외), 회의·홍보 문구가 아닌 변경 승인서로만 정원을 바꿀 수 있다.</td>
+      </tr>
+      <tr>
+        <td class="path">documents\W04_03_동아리운영규칙.md</td>
+        <td>CLUB-01 운영 규칙. 신청 상태는 확정·대기·취소, 물품 구매 기본 인원은 확정 인원. 회비 기념품 1인 3,000원 이내, 원본 CSV 보존과 판단 근거 문서화 규칙.</td>
+      </tr>
+      <tr>
+        <td class="path">documents\W04_04_행사안내.md</td>
+        <td>NOTICE-04 행사 홍보 안내. E04는 2026-09-28 14~17시 학생회관 전시실, 홍보상 모집 정원 180명. 홍보용이며 장소 승인서가 아님을 명시(운영 검토 기준일 2026-09-22).</td>
+      </tr>
+      <tr>
+        <td class="path">documents\W04_05_지원금승인서.md</td>
+        <td>APPROVAL-FUND-04 지원금 승인서. E04 총 승인 한도 1,500,000원, 1차 지급 1,000,000원(거래 T091), 잔여 500,000원은 정산 후 지급 예정이라 현재 가용 현금에서 제외.</td>
+      </tr>
+      <tr>
+        <td class="path">documents\W04_06_장소사용승인서.md</td>
+        <td>APPROVAL-SPACE-04 장소 사용 승인서. E04 승인 참가 정원 160명(운영요원 별도). 홍보 180명은 승인 조건과 달라 정정 검토 필요, 변경 승인서 발급 전까지 정원은 160명.</td>
+      </tr>
+      <tr>
+        <td class="path">documents\W04_07_운영회의메모.md</td>
+        <td>MEMO-04 운영회의 메모. 홍보 180명 대비 승인 정원 160명 차이를 인지, 180명 변경 요청 예정이나 승인 기록은 아직 없음. 기념품 회비 처리 논의, 용도 불명 인화비 재확인.</td>
+      </tr>
+      <tr>
+        <td class="path">documents\W04_08_회계기준.md</td>
+        <td>ACCOUNT-01 회계 집계 기준. 기간 2026-07-01~09-22 처리완료 120건, 기초잔액 학교지원금 0·회비 800,000원. 수입/환불입금(+)·지출/환불지급(−), E04 순지출은 수입 제외, 구매계획은 회계에 합산하지 않음.</td>
+      </tr>
+      <tr>
+        <td class="path">data\구매계획.csv</td>
+        <td>앞으로 구매할 물품 12종(항목_ID·물품·수량기준·계수·단가·예정재원·용도). 수량기준 &#x27;참가자&#x27;는 확정 인원×계수로 계산하는 예정 수량이며 회계 거래에 합산하지 않는다.</td>
+      </tr>
+      <tr>
+        <td class="path">data\참가신청.csv</td>
+        <td>E04 참가 신청 200건(신청_ID·행사_ID·이름·신청상태·신청일·인화체험·식음료). 상태·신청 여부가 텍스트라 자동 수치 집계는 없고, 확정 인원은 상태별로 세어야 한다.</td>
+      </tr>
+      <tr>
+        <td class="path">data\회계내역.csv</td>
+        <td>E01~E04 네 행사의 처리완료 거래 120건(거래_ID·거래일·행사_ID·재원·유형·항목·용도·금액·증빙·원거래_ID). 금액 합계 4,323,000원은 수입+지출 단순 합이라 재원별·유형별 구분 집계가 별도로 필요하다.</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>핵심 표</h2>
+    <table>
+      <thead><tr><th>파일</th><th>컬럼</th><th>합계</th><th>평균</th><th>개수</th></tr></thead>
+      <tbody>
+      <tr>
+        <td class="path">data\구매계획.csv</td>
+        <td>계수</td>
+        <td class="num">63.0</td>
+        <td class="num">5.25</td>
+        <td class="num">12</td>
+      </tr>
+      <tr>
+        <td class="path">data\구매계획.csv</td>
+        <td>단가</td>
+        <td class="num">27500.0</td>
+        <td class="num">2291.6667</td>
+        <td class="num">12</td>
+      </tr>
+      <tr>
+        <td class="path">data\회계내역.csv</td>
+        <td>금액</td>
+        <td class="num">4323000.0</td>
+        <td class="num">36025.0</td>
+        <td class="num">120</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>확인 필요</h2>
+    <p class="dim">없음</p>
+  </section>
+  <footer>data-to-html 스킬로 생성 · 2026-09-23</footer>
+</body></html>

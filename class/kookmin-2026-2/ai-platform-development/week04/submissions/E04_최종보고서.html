@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>빛담 가을사진전(E04) 최종 보고서</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, "Segoe UI", "Malgun Gothic", sans-serif;
+         max-width: 900px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+  h1 { border-bottom: 2px solid #4a6; padding-bottom: .3rem; }
+  h2 { margin-top: 2rem; color: #4a6; }
+  .meta { color: #888; margin: .2rem 0; font-size: .9rem; }
+  table { border-collapse: collapse; width: 100%; margin-top: .5rem; }
+  th, td { border: 1px solid #ccc; padding: .45rem .6rem; text-align: left; vertical-align: top; }
+  th { background: rgba(74,170,102,.15); }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  td.path, .path { font-family: ui-monospace, Consolas, monospace; font-size: .85rem; }
+  .dim { color: #999; }
+  ul.review li { color: #c33; }
+  footer { margin-top: 2.5rem; color: #aaa; font-size: .8rem; }
+</style>
+</head><body>
+  <h1>빛담 가을사진전(E04) 최종 보고서</h1>
+  <p class="meta">생성일 2026-09-23</p>
+
+  <section>
+    <h2>개요</h2>
+    <p class="meta">대상: <code>week04 (documents md 9 · data csv 3 · submissions json 2)</code></p>
+    <p class="meta">파일 수: md 9개 · csv 3개 · json 2개</p>
+    <p>빛담 가을사진전(E04, 2026-09-28)의 근거 규정·원본 데이터·집계 결과를 종합한 최종 보고서다.
+       정원 변경 승인서(CHANGE-SPACE-04)로 승인 참가 정원은 160명에서 <b>180명</b>으로 변경되었다.
+       확정 참가자는 140명, 대기 40명, 취소 20명이며, 대기 40명을 모두 전환하면 180명으로 승인 정원 이내가 된다(담당자 승인 절차 필요).
+       재원별 현재 잔액은 학교지원금 250,000원·동아리회비 1,843,000원이고 E04 순지출은 896,000원이다.
+       구매계획 예정비용은 인원에 따라 140명 460,000원 / 160명 510,000원 / 180명 560,000원이다.
+       외부 대학생 출입 허용 여부는 어느 근거 문서에도 규정이 없어 확인이 필요하다.</p>
+  </section>
+
+  <section>
+    <h2>문서 요약</h2>
+    <table>
+      <thead><tr><th>파일</th><th>요약</th></tr></thead>
+      <tbody>
+        <tr><td class="path">documents/W04_01_학교지원금지침.md</td><td>RULE-01. 지원금은 승인 행사·한도 내 집행. 식음료 확정 참가자 1인 4,000원 이내, 기념품·주류·개인장비 제외. 승인액=지출 한도.</td></tr>
+        <tr><td class="path">documents/W04_02_학교공간이용안내.md</td><td>RULE-02. 정원은 장소 사용 승인서에 따른다(운영요원 제외). 변경은 변경 승인서로만 가능. 대기자 전환은 담당자 승인 후 명단 반영.</td></tr>
+        <tr><td class="path">documents/W04_03_동아리운영규칙.md</td><td>CLUB-01. 신청상태 확정/대기/취소. 물품 기본 인원=확정 인원, 대기자 미가산. 회비 기념품 1인 3,000원 이내+결재·영수증.</td></tr>
+        <tr><td class="path">documents/W04_04_행사안내.md</td><td>NOTICE-04. 홍보용 안내(모집 180명). 승인서가 아니며 신청자는 확정 안내 확인 필요.</td></tr>
+        <tr><td class="path">documents/W04_05_지원금승인서.md</td><td>APPROVAL-FUND-04. 총 승인 한도 1,500,000원, 1차 1,000,000원 지급(T091). 잔여 500,000원은 정산 후, 현재 가용현금 아님.</td></tr>
+        <tr><td class="path">documents/W04_06_장소사용승인서.md</td><td>APPROVAL-SPACE-04. 원 승인 참가 정원 160명(운영요원 별도). 유효한 변경 승인서 전까지 160명.</td></tr>
+        <tr><td class="path">documents/W04_07_운영회의메모.md</td><td>MEMO-04. 홍보 180 vs 승인 160, 정원 변경 요청 예정. 외부인 참가 조건 미결정.</td></tr>
+        <tr><td class="path">documents/W04_08_회계기준.md</td><td>ACCOUNT-01. 기초잔액 학교지원금 0·회비 800,000. 부호·현재잔액·순지출·구매계획 산식 정의.</td></tr>
+        <tr><td class="path">updates/W04_09_정원변경승인서.md</td><td>CHANGE-SPACE-04(2026-09-23). 승인 정원 160→180 변경, APPROVAL-SPACE-04 정원 조항 대체. 예산 증액·신청자 상태 자동변경 아님.</td></tr>
+        <tr><td class="path">data/참가신청.csv</td><td>E04 신청 200건. 확정 140·대기 40·취소 20. 확정자 인화체험·식음료 선택 포함.</td></tr>
+        <tr><td class="path">data/회계내역.csv</td><td>E01~E04 처리완료 거래 120건. 재원·유형·금액·행사 ID·증빙.</td></tr>
+        <tr><td class="path">data/구매계획.csv</td><td>예정 구매 12항목. 수량기준 참가자/고정, 단가, 예정재원.</td></tr>
+        <tr><td class="path">submissions/E04_집계.json</td><td>규칙 적용 집계 결과: 참가 상태·확정자 선택·재원별 잔액·E04 순지출·구매계획 140/160/180 시나리오.</td></tr>
+        <tr><td class="path">submissions/E04_정원_대기자_외부인_답변.json</td><td>세 질문(최대 인원·대기자 전원 확정·외부인 출입) 답변과 문서 근거·확인필요 플래그.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>핵심 표</h2>
+
+    <h3>참가 현황 (E04)</h3>
+    <table>
+      <thead><tr><th>상태</th><th class="num">인원</th><th>비고</th></tr></thead>
+      <tbody>
+        <tr><td>확정</td><td class="num">140</td><td>물품 기본 인원 (CLUB-01 제1조)</td></tr>
+        <tr><td>대기</td><td class="num">40</td><td>미리 더하지 않음 (CLUB-01 제3조)</td></tr>
+        <tr><td>취소</td><td class="num">20</td><td>-</td></tr>
+      </tbody>
+    </table>
+
+    <h3>확정자(140명) 선택</h3>
+    <table>
+      <thead><tr><th>항목</th><th class="num">신청</th><th class="num">미신청</th><th class="num">받지않음</th></tr></thead>
+      <tbody>
+        <tr><td>인화체험</td><td class="num">105</td><td class="num">35</td><td class="num">0</td></tr>
+        <tr><td>식음료</td><td class="num">112</td><td class="num">0</td><td class="num">28</td></tr>
+      </tbody>
+    </table>
+
+    <h3>회계 · 잔액 (ACCOUNT-01)</h3>
+    <table>
+      <thead><tr><th>재원</th><th class="num">기초잔액</th><th class="num">현재잔액</th><th class="num">E04 순지출</th></tr></thead>
+      <tbody>
+        <tr><td>학교지원금</td><td class="num">0원</td><td class="num">250,000원</td><td class="num">750,000원</td></tr>
+        <tr><td>동아리회비</td><td class="num">800,000원</td><td class="num">1,843,000원</td><td class="num">146,000원</td></tr>
+        <tr><td><b>합계</b></td><td class="num">-</td><td class="num">-</td><td class="num"><b>896,000원</b></td></tr>
+      </tbody>
+    </table>
+    <p class="meta">부호: 수입/환불입금(+), 지출/환불지급(−) [제2조]. E04 순지출 = 지출+환불지급−환불입금, 수입 제외 [제3조].</p>
+
+    <h3>구매계획 비교</h3>
+    <table>
+      <thead><tr><th>인원 시나리오</th><th class="num">학교지원금</th><th class="num">동아리회비</th><th class="num">총 예정비용</th></tr></thead>
+      <tbody>
+        <tr><td>140명 (확정 기준)</td><td class="num">256,000원</td><td class="num">204,000원</td><td class="num">460,000원</td></tr>
+        <tr><td>160명 (변경 전 정원)</td><td class="num">284,000원</td><td class="num">226,000원</td><td class="num">510,000원</td></tr>
+        <tr><td>180명 (승인 정원)</td><td class="num">312,000원</td><td class="num">248,000원</td><td class="num">560,000원</td></tr>
+      </tbody>
+    </table>
+    <p class="meta">'참가자'=인원×계수, '고정'=계수 자체 (제5조). 구매계획은 예정치이며 회계에 합산하지 않음 (제4조).</p>
+
+    <h3>핵심 판단 (3대 질문)</h3>
+    <table>
+      <thead><tr><th>질문</th><th>답</th><th>근거</th></tr></thead>
+      <tbody>
+        <tr><td>최대 참여 인원</td><td><b>180명</b> (운영요원 별도)</td><td>CHANGE-SPACE-04(160→180 변경, APPROVAL-SPACE-04 대체), RULE-02 제1·2조</td></tr>
+        <tr><td>대기자 전원 확정 가능 여부</td><td>가능(180 이내). 단 담당자 승인 후 순서대로, 자동 아님</td><td>CHANGE-SPACE-04(자동변경 아님), RULE-02 제3조, CLUB-01 제3조</td></tr>
+        <tr><td>외부 대학생 출입 허용</td><td class="dim">확인 필요</td><td>MEMO-04(미결정), 자격 조항 부재</td></tr>
+        <tr><td>정원 확대와 예산</td><td>정원↑은 예산 증액 아님</td><td>CHANGE-SPACE-04</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>확인 필요</h2>
+    <ul class="review">
+      <li>외부 대학생 출입 허용 여부 — MEMO-04에 "외부인 참가 조건은 이 회의에서 결정하지 않았다" 명시, 어느 문서에도 참가 자격 조항 없음.</li>
+      <li>180명 확대 시 예산 — CHANGE-SPACE-04는 예산 증액 승인이 아님. 지원금 한도(1,500,000원)·재원 내 집행 여부 확인.</li>
+      <li>대기자 전환 절차 — RULE-02 제3조·CHANGE-SPACE-04에 따라 담당자 승인 후 명단 반영해야 하며, 보고서/집계만으로 확정 상태를 바꾸지 않음.</li>
+      <li>식음료 정산 — RULE-01 제2조, 최종 정산 시 실제 참석 인원·증빙 대조(신청 112명 기준 예산 별도 점검).</li>
+    </ul>
+  </section>
+
+  <footer>data-to-html 스킬 기반 최종 보고서 · 숫자=코드 집계 인용(재계산 없음), 문장=AI 요약 · 2026-09-23</footer>
+</body></html>
