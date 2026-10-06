@@ -1,0 +1,116 @@
+{
+  "_meta": {
+    "source": "mission/data/notices.md",
+    "actual_path": "C:\\Users\\김상원\\Desktop\\nxt-kirocrew-hands-on\\class\\kookmin-2026-2\\ai-platform-development\\week05\\mission\\data\\notices.md",
+    "parsed_count": 6,
+    "cutoff": "2026-09-14 09:00",
+    "timezone": "Asia/Seoul"
+  },
+  "notices": [
+    {
+      "id": "N01",
+      "title": "도서관 평일 운영시간 안내",
+      "posted": "2026-09-07T10:00:00",
+      "department": "학술정보관",
+      "work_id": "LIB-01",
+      "body": "2026-09-15부터 2026-09-30까지 중앙도서관 일반열람실의 평일 운영시간을 09:00–22:00로 변경합니다. 주말 운영시간과 자료실 운영시간은 기존과 같습니다. 별도 신청은 없습니다.",
+      "schedules": [
+        "2026-09-15부터 2026-09-30까지 중앙도서관 일반열람실의 평일 운영시간을 09:00–22:00로 변경합니다."
+      ],
+      "deadline": null,
+      "deadline_raw": null,
+      "is_correction": false,
+      "correction_target": null,
+      "sw_relevant": false,
+      "sw_relevant_reason": "소프트웨어 학부 특정 관련성 낮음(전교생 대상 일반 공지)"
+    },
+    {
+      "id": "N02",
+      "title": "캠퍼스 환경정리 봉사 모집",
+      "posted": "2026-09-08T11:00:00",
+      "department": "학생지원팀",
+      "work_id": "VOL-02",
+      "body": "2026-09-23 13:00–15:00에 교내 환경정리 봉사를 진행합니다. 재학생 12명을 모집하며, 신청은 2026-09-18 17:00까지 학생지원팀 방문 접수로 받습니다. 확정 안내를 받은 학생은 행사 당일 학생회관 1층 로비로 모여 주세요.",
+      "schedules": [
+        "2026-09-23 13:00–15:00에 교내 환경정리 봉사를 진행합니다.",
+        "재학생 12명을 모집하며, 신청은 2026-09-18 17:00까지 학생지원팀 방문 접수로 받습니다."
+      ],
+      "deadline": "2026-09-18T17:00:00",
+      "deadline_raw": "2026-09-18 17:00",
+      "is_correction": false,
+      "correction_target": null,
+      "sw_relevant": false,
+      "sw_relevant_reason": "소프트웨어 학부 특정 관련성 낮음(전교생 대상 일반 공지)"
+    },
+    {
+      "id": "N03",
+      "title": "AI 포트폴리오 특강 안내",
+      "posted": "2026-09-09T10:00:00",
+      "department": "취업지원센터",
+      "work_id": "TALK-03",
+      "body": "AI 프로젝트를 포트폴리오로 정리하는 특강을 2026-09-18 15:00–16:00에 미래관 301호에서 엽니다. 재학생 누구나 별도 신청 없이 참석할 수 있습니다. 노트북을 지참해 주세요.",
+      "schedules": [
+        "AI 프로젝트를 포트폴리오로 정리하는 특강을 2026-09-18 15:00–16:00에 미래관 301호에서 엽니다."
+      ],
+      "deadline": null,
+      "deadline_raw": null,
+      "is_correction": false,
+      "correction_target": null,
+      "sw_relevant": true,
+      "sw_relevant_reason": "관련 키워드 포함: ai, 포트폴리오, 프로젝트"
+    },
+    {
+      "id": "N04",
+      "title": "AI 포트폴리오 특강 일정 정정",
+      "posted": "2026-09-11T14:00:00",
+      "department": "취업지원센터",
+      "work_id": "TALK-03",
+      "body": "강사 일정 변경으로 TALK-03 특강을 **2026-09-21 16:00–17:00**로 변경합니다. N03에 기재된 기존 일시는 취소합니다. 장소, 참가 대상, 신청 방식, 준비물은 N03과 동일합니다.",
+      "schedules": [
+        "강사 일정 변경으로 TALK-03 특강을 **2026-09-21 16:00–17:00**로 변경합니다."
+      ],
+      "deadline": null,
+      "deadline_raw": null,
+      "is_correction": true,
+      "correction_target": "N03",
+      "sw_relevant": true,
+      "sw_relevant_reason": "관련 키워드 포함: ai, 포트폴리오"
+    },
+    {
+      "id": "N05",
+      "title": "가을 축제 홍보단 모집",
+      "posted": "2026-09-07T13:00:00",
+      "department": "총학생회",
+      "work_id": "FEST-05",
+      "body": "가을 축제 홍보단 8명을 모집합니다. 신청서는 2026-09-11 17:00까지 학생회실에 제출해야 합니다. 모집 마감 이후 추가 접수는 받지 않습니다. 선발 결과는 2026-09-16에 개별 안내합니다.",
+      "schedules": [
+        "신청서는 2026-09-11 17:00까지 학생회실에 제출해야 합니다.",
+        "선발 결과는 2026-09-16에 개별 안내합니다."
+      ],
+      "deadline": "2026-09-11T17:00:00",
+      "deadline_raw": "2026-09-11 17:00",
+      "is_correction": false,
+      "correction_target": null,
+      "sw_relevant": false,
+      "sw_relevant_reason": "소프트웨어 학부 특정 관련성 낮음(전교생 대상 일반 공지)"
+    },
+    {
+      "id": "N06",
+      "title": "학생 프로젝트 전시 참가 신청",
+      "posted": "2026-09-10T09:00:00",
+      "department": "소프트웨어학부 사무실",
+      "work_id": "SHOW-06",
+      "body": "학생 프로젝트 전시 참가 신청을 **2026-09-14까지** 학부 사무실에서 받습니다. 1인 또는 팀 단위로 신청할 수 있습니다. 전시는 2026-09-25 14:00–17:00, 창의관 전시실에서 진행합니다. 문의는 학부 사무실로 해 주세요.",
+      "schedules": [
+        "학생 프로젝트 전시 참가 신청을 **2026-09-14까지** 학부 사무실에서 받습니다.",
+        "전시는 2026-09-25 14:00–17:00, 창의관 전시실에서 진행합니다."
+      ],
+      "deadline": "2026-09-14T00:00:00",
+      "deadline_raw": "2026-09-14",
+      "is_correction": false,
+      "correction_target": null,
+      "sw_relevant": true,
+      "sw_relevant_reason": "소프트웨어학부 주관/직접 언급"
+    }
+  ]
+}
