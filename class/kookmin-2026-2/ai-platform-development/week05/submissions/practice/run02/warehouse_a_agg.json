@@ -1,0 +1,9 @@
+{
+  "warehouse": "a",
+  "items": {
+    "mug": 12,
+    "bottle": 3,
+    "sensor": 7
+  },
+  "total": 22
+}
